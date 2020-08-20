@@ -67,8 +67,8 @@ button{
     width: 50%;
     margin: 30px 40px 0 0;
 }
-.team{
-    margin: 50px 0 50px 0;
+.teamer{
+    margin: 50px 0 40px 0;
     padding: 50px 0;
     display: grid;
     align-items: center;
@@ -98,8 +98,41 @@ button{
     box-shadow: 2px 2px 5px 2px #aaaaaa
 }
 
-.team img{
+.teamer img{
     justify-self: center;
+}
+.box2{
+    align-self: flex-start;
+    justify-self: right;
+    padding: 25px;
+    background-color: var(--yellow);
+    box-shadow: -10px 10px 5px #aaaaaa;
+}
+
+.box1,
+.box2{
+    line-height: 1.6rem;
+}
+
+#services .center{
+    padding-top: 60px;
+}
+
+.horizontal-images{
+    margin: 40px 0;
+    width: 100%;
+}
+ol{
+    list-style: none;
+}
+ol ul{
+    line-height: 22px;
+    list-style: circle;
+}
+
+.separe{
+    line-height: 23px;
+    margin: 30px 0;
 }
 
 ol ul{
@@ -109,6 +142,7 @@ ol ul{
 img{
     width: 300px;
 }
+
 h2, h3, h4{
     margin-bottom: 20px;
     font-family: 'Heebo', sans-serif;
@@ -125,11 +159,33 @@ p{
     display: flex;
     flex-direction: column;
 }
-.margin-10px{
-    margin: 10px;
+.padding-10px{
+    padding: 40px 0;
+}
+
+.center svg{
+    height: 250px;
 }
 .section-yellow{
     background-color: var(--yellow);
+}
+
+section .separe img{
+    justify-content: center;
+}
+.flex-row-always{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+pre{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.svg{
+    width: 32px;
+    height: 32px;
 }
 
 @media(max-width:820px){
@@ -158,12 +214,16 @@ p{
     .style-images{
         margin: 30px 0;
     }
-    .team{
+    .teamer{
         grid-template-columns: 1fr;
     }
     .gridx6{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+    .box2{
+        margin-top: 50px;
+        justify-self: center;
     }
 }
 
